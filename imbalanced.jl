@@ -1,4 +1,4 @@
-using StatsBase, HTTP, JSON, Printf, CSV, DataFrames
+using StatsBase, HTTP, JSON, Printf, CSV, DataFrames, Dates
 function imbalance(solves::Vector)
     ratios = @. log1p(solves[2:end]) - log1p(solves[1:end-1])
     return std(ratios; corrected=false)
@@ -24,38 +24,53 @@ i0 = 1
 k = ndigits(length(cl))
 ttt = 0
 pvdata = Dict([x[1] => collect(x) for x ∈ eachrow(CSV.read(ARGS[1], DataFrame))])
+global skiplist = Set()
+try
+    global skiplist = Set(tryparse.(Int, readlines("status400.txt")))
+catch e
+    println("couldn't parse status400 file: $e")
+end
 open(ARGS[2], "w") do fobj
-    println(fobj, "ID,Starting time,Contest title,Contest imbalance")
-    fstat = 0
-    while i0 <= length(cl)
-        t1 = time()
-        info = cl[i0]
-        i = info["id"]
-        if i ∈ keys(pvdata)
-            println(fobj, "$(pvdata[i][1]),$(pvdata[i][2]),\"$(pvdata[i][3])\",$(pvdata[i][4])")
-        else
-            if info["phase"] != "FINISHED"; global i0 += 1; println(stderr, "skipped $i"); continue; end
-            try
-                solvecounts, fstat = solves(i)
-                println(fobj, "$i,$(info["startTimeSeconds"]),\"$(info["name"])\",$(imbalance(solvecounts))")
-            catch e
-                if e isa HTTP.Exceptions.StatusError
-                    println(stderr, "\nfailed fetch for $i: $e")
-                    if fstat == 403; sleep(30 + 30rand()); end
-                elseif e isa InterruptException
-                    throw(e)
-                else
-                    println(stderr, "\nfailed at $i: $e")
+    open("status400.txt", "w") do skipf
+        println(fobj, "ID,Starting time (UTC),Contest title,Contest imbalance")
+        fstat = 0
+        while i0 <= length(cl)
+            t1 = time()
+            info = cl[i0]
+            i = info["id"]
+            if i ∈ keys(pvdata)
+                u = pvdata[i][2] isa DateTime ? pvdata[i][2] : unix2datetime(pvdata[i][2]);
+                println(fobj, "$(pvdata[i][1]),$u,\"$(pvdata[i][3])\",$(pvdata[i][4])")
+            elseif i ∈ skiplist; global i0 += 1; println(stderr, "skipped $i"); println(skipf, i)
+            elseif info["phase"] != "FINISHED"; global i0 += 1; println(stderr, "skipped $i")
+            else
+                try
+                    solvecounts, fstat = solves(i)
+                    println(fobj, "$i,$(unix2datetime(info["startTimeSeconds"])),\"$(info["name"])\",$(imbalance(solvecounts))")
+                catch e
+                    if e isa HTTP.Exceptions.StatusError
+                        global fstat = e.status
+                        println(stderr, "failed fetch for $i: status $fstat")
+                        if fstat == 400; println(skipf, i); end
+                        if fstat == 403; sleep(30 + 30rand()); end
+                    elseif e isa InterruptException
+                        throw(e)
+                    elseif e isa BoundsError
+                        println(stderr, "malformed standings for $i")
+                        println(skipf, i)
+                    else
+                        println(stderr, "failed at $i: $e")
+                    end
                 end
+                t2 = time()
+                x = 3+1.6rand()
+                if t2-t1 < x; sleep(x-t2+t1); end
             end
-            t2 = time()
-            x = 3+1.6rand()
-            if t2-t1 < x; sleep(x-t2+t1); end
+            global i0 += 1
+            t3 = time()
+            global ttt += t3-t1
+            println(stderr, @sprintf("contest %d: %*d/%d, %6.2f%%, eta %s", i, k, i0-1, length(cl), 100*(i0-1)/length(cl), eta((length(cl)-i0+1)*ttt/(i0-1))))
         end
-        global i0 += 1
-        t3 = time()
-        global ttt += t3-t1
-        println(stderr, @sprintf("contest %d: %*d/%d, %6.2f%%, eta %s", i, k, i0-1, length(cl), 100*(i0-1)/length(cl), eta((length(cl)-i0+1)*ttt/(i0-1))))
     end
 end
 
