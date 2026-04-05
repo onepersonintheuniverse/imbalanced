@@ -25,19 +25,19 @@ k = ndigits(length(cl))
 ttt = 0
 pvdata = Dict([x[1] => collect(x) for x ∈ eachrow(CSV.read(ARGS[1], DataFrame))])
 open(ARGS[2], "w") do fobj
-    println(fobj, "ID|Starting time|Contest title|Contest imbalance")
+    println(fobj, "ID,Starting time,Contest title,Contest imbalance")
     fstat = 0
     while i0 <= length(cl)
         t1 = time()
         info = cl[i0]
         i = info["id"]
         if i ∈ keys(pvdata)
-            println(fobj, join(pvdata[i], '|'))
+            println(fobj, "$(pvdata[i][1]),$(pvdata[i][2]),\"$(pvdata[i][3])\",$(pvdata[i][4])")
         else
             if info["phase"] != "FINISHED"; global i0 += 1; println(stderr, "skipped $i"); continue; end
             try
                 solvecounts, fstat = solves(i)
-                println(fobj, "$i|$(info["startTimeSeconds"])|$(info["name"])|$(imbalance(solvecounts))")
+                println(fobj, "$i,$(info["startTimeSeconds"]),\"$(info["name"])\",$(imbalance(solvecounts))")
             catch e
                 if e isa HTTP.Exceptions.StatusError
                     println(stderr, "\nfailed fetch for $i: $e")
