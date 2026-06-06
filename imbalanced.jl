@@ -5,8 +5,8 @@ function imbalance(solves::Vector)
 end
 const jar = HTTP.Cookies.CookieJar()
 function standings(x)
-    fetched = HTTP.get("https://codeforces.com/api/contest.standings?contestId=$x&participantTypes=CONTESTANT"; cookiejar=jar)
-    JSON.parse(String(fetched.body))["result"]["rows"], fetched.status
+    fetched = HTTP.get("https://codeforces.com/api/contest.standings?contestId=$x"; cookiejar=jar)
+    filter(x -> x["party"]["participantType"] == "CONTESTANT", JSON.parse(String(fetched.body))["result"]["rows"]), fetched.status
 end
 function solves(id)
     X, fstat = standings(id)
@@ -30,6 +30,7 @@ try
 catch e
     println("couldn't parse status400 file: $e")
 end
+vals = []
 open(ARGS[2], "w") do fobj
     open("status400.txt", "w") do skipf
         println(fobj, "ID,Starting time (UTC),Contest title,Contest imbalance")
@@ -41,12 +42,15 @@ open(ARGS[2], "w") do fobj
             if i ∈ keys(pvdata)
                 u = pvdata[i][2] isa DateTime ? pvdata[i][2] : unix2datetime(pvdata[i][2]);
                 println(fobj, "$(pvdata[i][1]),$u,\"$(pvdata[i][3])\",$(pvdata[i][4])")
+                v = pvdata[i][4]
+                if !isnan(v) && !isinf(v); push!(vals, v); end
             elseif i ∈ skiplist; global i0 += 1; println(stderr, "skipped $i"); println(skipf, i)
             elseif info["phase"] != "FINISHED"; global i0 += 1; println(stderr, "skipped $i")
             else
                 try
                     solvecounts, fstat = solves(i)
                     println(fobj, "$i,$(unix2datetime(info["startTimeSeconds"])),\"$(info["name"])\",$(imbalance(solvecounts))")
+                    println(pilf, imbalance(solvecounts))
                 catch e
                     if e isa HTTP.Exceptions.StatusError
                         global fstat = e.status
@@ -74,3 +78,15 @@ open(ARGS[2], "w") do fobj
     end
 end
 
+mx = maximum(vals)
+nbins = 1+trunc(Int, mx/0.1)
+counts = fill(0, nbins)
+
+open(ARGS[3], "w") do pilf
+    for i ∈ vals
+        counts[1+trunc(Int, i/0.1)] += 1
+    end
+    for i ∈ 1:nbins
+        println(pilf, "$((i-1)*0.1) $(counts[i])")
+    end
+end
