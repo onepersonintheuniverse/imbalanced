@@ -1,3 +1,4 @@
+#!/usr/bin/env julia
 using StatsBase, HTTP, JSON, Printf, CSV, DataFrames, Dates
 function imbalance(solves::Vector)
     ratios = @. log1p(solves[2:end]) - log1p(solves[1:end-1])
@@ -50,7 +51,6 @@ open(ARGS[2], "w") do fobj
                 try
                     solvecounts, fstat = solves(i)
                     println(fobj, "$i,$(unix2datetime(info["startTimeSeconds"])),\"$(info["name"])\",$(imbalance(solvecounts))")
-                    println(pilf, imbalance(solvecounts))
                 catch e
                     if e isa HTTP.Exceptions.StatusError
                         global fstat = e.status

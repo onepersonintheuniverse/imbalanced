@@ -1,4 +1,5 @@
 set term pngcairo size 2560,1440
+set output 'plot.png'
 stats 'imbalance.gpd' using 1 nooutput
 XMAX = STATS_max
 set style fill solid
