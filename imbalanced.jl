@@ -24,7 +24,8 @@ println(stderr, "going thru contests")
 i0 = 1
 k = ndigits(length(cl))
 ttt = 0
-pvdata = Dict([x[1] => collect(x) for x ∈ eachrow(CSV.read(ARGS[1], DataFrame))])
+discard = parse(Int, ARGS[4])
+pvdata = Dict([x[1] => collect(x) for x ∈ eachrow(CSV.read(ARGS[1], DataFrame))[discard+1:end]])
 global skiplist = Set()
 try
     global skiplist = Set(tryparse.(Int, readlines("status400.txt")))
@@ -44,13 +45,15 @@ open(ARGS[2], "w") do fobj
                 u = pvdata[i][2] isa DateTime ? pvdata[i][2] : unix2datetime(pvdata[i][2]);
                 println(fobj, "$(pvdata[i][1]),$u,\"$(pvdata[i][3])\",$(pvdata[i][4])")
                 v = pvdata[i][4]
-                if !isnan(v) && !isinf(v); push!(vals, v); end
-            elseif i ∈ skiplist; global i0 += 1; println(stderr, "skipped $i"); println(skipf, i)
-            elseif info["phase"] != "FINISHED"; global i0 += 1; println(stderr, "skipped $i")
+                isfinite(v) && push!(vals, v)
+            elseif i ∈ skiplist; println(stderr, "skipped $i"); println(skipf, i)
+            elseif info["phase"] != "FINISHED"; println(stderr, "skipped $i")
             else
                 try
                     solvecounts, fstat = solves(i)
-                    println(fobj, "$i,$(unix2datetime(info["startTimeSeconds"])),\"$(info["name"])\",$(imbalance(solvecounts))")
+                    x = imbalance(solvecounts)
+                    println(fobj, "$i,$(unix2datetime(info["startTimeSeconds"])),\"$(info["name"])\",$x")
+                    isfinite(x) && push!(vals, x)
                 catch e
                     if e isa HTTP.Exceptions.StatusError
                         global fstat = e.status
@@ -79,14 +82,14 @@ open(ARGS[2], "w") do fobj
 end
 
 mx = maximum(vals)
-nbins = 1+trunc(Int, mx/0.1)
+nbins = 1+trunc(Int, mx*10)
 counts = fill(0, nbins)
 
 open(ARGS[3], "w") do pilf
     for i ∈ vals
-        counts[1+trunc(Int, i/0.1)] += 1
+        counts[1+trunc(Int, i*10)] += 1
     end
     for i ∈ 1:nbins
-        println(pilf, "$((i-1)*0.1) $(counts[i])")
+        println(pilf, "$((i-1)/10) $(counts[i])")
     end
 end

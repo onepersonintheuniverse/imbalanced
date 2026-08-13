@@ -8,4 +8,5 @@ set xtics 0.1
 set xlabel "Imbalance"
 set ylabel "Count"
 set title "Histogram of contest imbalances"
+set tics out
 plot 'imbalance.gpd' using ($1+0.05):2:1 with boxes fc palette title "Codeforces contests"

@@ -1,5 +1,18 @@
 ID,Starting time (UTC),Contest title,Contest imbalance
-2241,2026-06-30T14:35:00,"Codeforces Round 1107 (Div. 3)",1.4052321089800435
+2255,2026-08-09T14:35:00,"Codeforces Round 1116 (Div. 1)",0.5718349580274272
+2256,2026-08-09T14:35:00,"Codeforces Round 1116 (Div. 2)",0.9348331550089238
+2253,2026-08-07T14:35:00,"Educational Codeforces Round 193 (Rated for Div. 2)",0.38480678946490604
+2252,2026-08-06T14:35:00,"Codeforces Round 1115 (Div. 2)",0.832691561710716
+2254,2026-08-04T14:35:00,"Codeforces Round 1114 (Div. 3)",0.900778545598381
+2248,2026-08-01T14:35:00,"Codeforces Round 1113 (Div. 2)",1.1587432666903634
+2249,2026-07-26T14:35:00,"Codeforces Round 1112 (Div. 1)",0.5753007466868258
+2250,2026-07-26T14:35:00,"Codeforces Round 1112 (Div. 2)",0.615521886993073
+2247,2026-07-18T14:35:00,"Codeforces Round 1111 (Div. 2)",0.9015264688472511
+2245,2026-07-16T14:45:00,"Spectral::Cup 2026 Round 3 (Codeforces Round 1110, Div. 1 + Div. 2)",0.8257271036608629
+2244,2026-07-14T14:35:00,"Codeforces Round 1109 (Div. 3)",0.44453073143168276
+2246,2026-07-12T14:35:00,"Codeforces Round 1108 (Div. 2)",1.1576683991680516
+2242,2026-07-06T14:35:00,"Educational Codeforces Round 192 (Rated for Div. 2)",0.8336287868700308
+2241,2026-06-30T14:35:00,"Codeforces Round 1107 (Div. 3)",1.490442211340342
 2238,2026-06-28T14:35:00,"Codeforces Round 1106 (Div. 2)",0.9968173090234524
 2239,2026-06-27T14:35:00,"Codeforces Round 1105 (Div. 1)",0.9046394022376143
 2240,2026-06-27T14:35:00,"Codeforces Round 1105 (Div. 2)",1.2273401917913307
@@ -7,8 +20,8 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 2236,2026-06-12T14:35:00,"Codeforces Round 1103 (Div. 3)",1.192933640802719
 2233,2026-06-09T14:35:00,"Educational Codeforces Round 191 (Rated for Div. 2)",0.6598385569835544
 2234,2026-06-07T14:35:00,"Codeforces Round 1102 (Div. 2)",1.6757974010675234
-2232,2026-05-30T14:35:00,"Codeforces Round 1101 (Div. 2)",0.9353141599685632
-2229,2026-05-23T14:35:00,"Spectral::Cup 2026 Round 2 (Codeforces Round 1100, Div. 1 + Div. 2)",0.5383283245219803
+2232,2026-05-30T14:35:00,"Codeforces Round 1101 (Div. 2)",0.9473108727504973
+2229,2026-05-23T14:35:00,"Spectral::Cup 2026 Round 2 (Codeforces Round 1100, Div. 1 + Div. 2)",0.5286808265935724
 2231,2026-05-21T14:35:00,"Codeforces Round 1099 (Div. 2)",0.5638113810026582
 2230,2026-05-18T14:35:00,"Educational Codeforces Round 190 (Rated for Div. 2)",0.6410581597317271
 2228,2026-05-16T14:35:00,"Codeforces Round 1098 (Div. 2)",0.5001663390803702
@@ -16,7 +29,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 2224,2026-05-06T06:05:00,"Codeforces Round 1097 (Div. 2,  Based on Zhili Cup 2026)",1.1383205582824143
 2227,2026-04-30T14:35:00,"Codeforces Round 1096 (Div. 3)",0.540808826958001
 2226,2026-04-28T14:35:00,"Codeforces Round 1095 (Div. 2)",0.7790448925027005
-2222,2026-04-25T14:35:00,"Spectral::Cup 2026 Round 1 (Codeforces Round 1094, Div. 1 + Div. 2)",0.5818418335549604
+2222,2026-04-25T14:35:00,"Spectral::Cup 2026 Round 1 (Codeforces Round 1094, Div. 1 + Div. 2)",0.5863745743010644
 2225,2026-04-21T14:35:00,"Educational Codeforces Round 189 (Rated for Div. 2)",0.7477877905464161
 2219,2026-04-13T14:35:00,"Codeforces Round 1093 (Div. 1)",1.125004814621489
 2220,2026-04-13T14:35:00,"Codeforces Round 1093 (Div. 2)",0.664984614706075
@@ -593,6 +606,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1591,2021-12-12T15:15:00,"Codeforces Round 759 (Div. 2, based on Technocup 2022 Elimination Round 3)",0.8524307992933808
 1585,2021-12-12T15:15:00,"Technocup 2022 - Elimination Round 3",0.8247148493696476
 1608,2021-12-11T10:05:00,"Codeforces Round 758 (Div.1 + Div. 2)",0.512290545421941
+1613,2021-12-01T14:35:00,"Educational Codeforces Round 118 (Rated for Div. 2)",1.129767733933811
 1609,2021-11-28T14:35:00,"Deltix Round, Autumn 2021 (open for everyone, rated, Div. 1 + Div. 2)",0.8806705515176487
 1614,2021-11-26T11:15:00,"Codeforces Round 757 (Div. 2)",0.49869608093124246
 1611,2021-11-25T14:35:00,"Codeforces Round 756 (Div. 3)",1.8627695119276746
@@ -602,6 +616,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1589,2021-11-14T06:05:00,"Codeforces Round 755 (Div. 2, based on Technocup 2022 Elimination Round 2)",1.0656702890763807
 1584,2021-11-14T06:05:00,"Technocup 2022 - Elimination Round 2",0.8199803486818533
 1605,2021-11-12T14:35:00,"Codeforces Round 754 (Div. 2)",1.3773200948748712
+1607,2021-11-02T14:35:00,"Codeforces Round 753 (Div. 3)",1.176660786193546
 1603,2021-10-30T14:35:00,"Codeforces Round 752 (Div. 1)",0.8941970105859518
 1604,2021-10-30T14:35:00,"Codeforces Round 752 (Div. 2)",1.5930376273830529
 1606,2021-10-29T14:35:00,"Educational Codeforces Round 116 (Rated for Div. 2)",1.550961183732523
@@ -610,6 +625,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1582,2021-10-24T10:05:00,"Codeforces Round 750 (Div. 2)",0.9476567328185956
 1586,2021-10-17T11:05:00,"Codeforces Round 749 (Div. 1 + Div. 2, based on Technocup 2022 Elimination Round 1)",0.594753916574001
 1583,2021-10-17T11:05:00,"Technocup 2022 - Elimination Round 1",0.6224988821742763
+1593,2021-10-13T14:35:00,"Codeforces Round 748 (Div. 3)",1.6975926917631305
 1598,2021-10-10T09:05:00,"Educational Codeforces Round 115 (Rated for Div. 2)",1.185574301517992
 1599,2021-10-09T09:05:00,"Bubble Cup 14 - Finals Online Mirror (Unrated, ICPC Rules, Teams Preferred, Div. 1)",2.3721327920816155
 1600,2021-10-09T09:05:00,"Bubble Cup 14 - Finals Online Mirror (Unrated, ICPC Rules, Teams Preferred, Div. 2)",2.0169432424292113
@@ -729,6 +745,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1411,2020-12-20T15:05:00,"Technocup 2021 - Elimination Round 3",0.7462980903312294
 1458,2020-12-19T09:35:00,"Codeforces Round 691 (Div. 1)",1.0042893631320085
 1459,2020-12-19T09:35:00,"Codeforces Round 691 (Div. 2)",1.0569620519673608
+1463,2020-12-17T14:35:00,"Educational Codeforces Round 100 (Rated for Div. 2)",1.1957197658181267
 1462,2020-12-15T14:35:00,"Codeforces Round 690 (Div. 3)",0.4579942906611633
 1460,2020-12-12T09:00:00,"NERC Challenge 2020: Marathon",NaN
 1461,2020-12-11T14:35:00,"Codeforces Round 689 (Div. 2, based on Zed Code Competition)",1.262999502468281
@@ -738,6 +755,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1456,2020-11-29T07:05:00,"Codeforces Round 687 (Div. 1, based on Technocup 2021 Elimination Round 2)",1.1005331425655496
 1457,2020-11-29T07:05:00,"Codeforces Round 687 (Div. 2, based on Technocup 2021 Elimination Round 2)",0.6853639438631981
 1415,2020-11-29T07:05:00,"Technocup 2021 - Elimination Round 2",0.8492816132985468
+1454,2020-11-24T14:35:00,"Codeforces Round 686 (Div. 3)",1.1653138959476625
 1451,2020-11-21T14:35:00,"Codeforces Round 685 (Div. 2)",0.7501613042541087
 1452,2020-11-19T14:35:00,"Educational Codeforces Round 98 (Rated for Div. 2)",1.1402104581614911
 1439,2020-11-17T14:35:00,"Codeforces Round 684 (Div. 1)",0.7776966911722567
@@ -757,6 +775,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1435,2020-10-25T11:05:00,"Codeforces Round 679 (Div. 2, based on Technocup 2021 Elimination Round 1)",1.0608899004361978
 1413,2020-10-25T11:05:00,"Technocup 2021 - Elimination Round 1",1.1284117933690778
 1436,2020-10-24T14:05:00,"Codeforces Round 678 (Div. 2)",0.9631727610688464
+1433,2020-10-20T14:35:00,"Codeforces Round 677 (Div. 3)",1.178437537473004
 1421,2020-10-18T09:05:00,"Codeforces Round 676 (Div. 2)",1.8894432949124398
 1428,2020-10-17T13:05:00,"Codeforces Raif Round 1 (Div. 1 + Div. 2)",1.0084952264122613
 1430,2020-10-11T09:05:00,"Educational Codeforces Round 96 (Rated for Div. 2)",0.9647898458152601
@@ -905,6 +924,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1277,2019-12-14T11:05:00,"Codeforces Round 606 (Div. 2, based on Technocup 2020 Elimination Round 4)",1.3704495031849302
 1259,2019-12-14T11:05:00,"Technocup 2020 - Elimination Round 4",1.541171824879578
 1272,2019-12-12T13:35:00,"Codeforces Round 605 (Div. 3)",1.1114496867492711
+1273,2019-12-05T21:10:00,"VK Cup 2019 - Квалификация (Design)",0.004865865549258522
 1275,2019-12-05T21:10:00,"VK Cup 2019 - Квалификация (Engine)",0.39987887548840606
 1274,2019-12-05T21:10:00,"VK Cup 2019 - Квалификация (Mobile)",0.0
 1264,2019-12-05T14:35:00,"Codeforces Round 604 (Div. 1)",1.2313331505137342
@@ -915,6 +935,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1261,2019-11-24T08:05:00,"Codeforces Round 602 (Div. 1, based on Technocup 2020 Elimination Round 3)",0.668670588323532
 1262,2019-11-24T08:05:00,"Codeforces Round 602 (Div. 2, based on Technocup 2020 Elimination Round 3)",1.317068192469435
 1227,2019-11-24T08:05:00,"Technocup 2020 - Elimination Round 3",0.8350302096506036
+1254,2019-11-19T14:35:00,"Codeforces Round 601 (Div. 1)",0.6961697508158007
 1255,2019-11-19T14:35:00,"Codeforces Round 601 (Div. 2)",0.68407342345873
 1253,2019-11-16T14:35:00,"Codeforces Round 600 (Div. 2)",0.928030027285221
 1257,2019-11-13T14:35:00,"Educational Codeforces Round 76 (Rated for Div. 2)",0.5780254272315655
@@ -928,6 +949,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1247,2019-10-26T11:05:00,"Codeforces Round 596 (Div. 2, based on Technocup 2020 Elimination Round 2)",0.892303628383532
 1225,2019-10-26T11:05:00,"Technocup 2020 - Elimination Round 2",0.970721474175821
 1251,2019-10-24T15:05:00,"Educational Codeforces Round 75 (Rated for Div. 2)",0.5942466793168301
+1249,2019-10-22T14:35:00,"Codeforces Round 595 (Div. 3)",1.577314988346007
 1239,2019-10-20T09:05:00,"Codeforces Round 594 (Div. 1)",1.1474289530738744
 1248,2019-10-20T09:05:00,"Codeforces Round 594 (Div. 2)",1.474496765235559
 1236,2019-10-17T13:35:00,"Codeforces Round 593 (Div. 2)",1.2324458030592453
@@ -937,6 +959,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1240,2019-10-06T15:05:00,"Codeforces Round 591 (Div. 1, based on Technocup 2020 Elimination Round 1)",0.9920921376121753
 1241,2019-10-06T15:05:00,"Codeforces Round 591 (Div. 2, based on Technocup 2020 Elimination Round 1)",0.9085219549360282
 1223,2019-10-06T15:05:00,"Technocup 2020 - Elimination Round 1",0.5403965501761122
+1234,2019-10-01T14:35:00,"Codeforces Round 590 (Div. 3)",1.0150249204058432
 1235,2019-09-30T18:00:00,"Huawei Honorcup Marathon 2",0.01062731683220175
 1228,2019-09-29T13:05:00,"Codeforces Round 589 (Div. 2)",0.7805575390291112
 1229,2019-09-23T14:05:00,"Codeforces Round 588 (Div. 1)",0.5372600418734181
@@ -1064,6 +1087,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1086,2018-12-23T13:35:00,"Codeforces Round 528 (Div. 1, based on Technocup 2019 Elimination Round 4)",0.8379826376344789
 1087,2018-12-23T13:35:00,"Codeforces Round 528 (Div. 2, based on Technocup 2019 Elimination Round 4)",1.4099082433190206
 1085,2018-12-23T13:35:00,"Technocup 2019 - Elimination Round 4",1.3522229302796194
+1092,2018-12-18T14:35:00,"Codeforces Round 527 (Div. 3)",1.5445176799996492
 1081,2018-12-16T14:35:00,"Avito Cool Challenge 2018",0.8881688868024313
 1093,2018-12-15T14:35:00,"Educational Codeforces Round 56 (Rated for Div. 2)",1.2119153493937445
 1083,2018-12-10T16:35:00,"Codeforces Round 526 (Div. 1)",2.8731265630969287
@@ -1078,6 +1102,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1078,2018-11-18T16:05:00,"Codeforces Round 522 (Div. 1, based on Technocup 2019 Elimination Round 3)",0.6816028439732044
 1079,2018-11-18T16:05:00,"Codeforces Round 522 (Div. 2, based on Technocup 2019 Elimination Round 3)",1.171295683939003
 1032,2018-11-18T16:05:00,"Technocup 2019 - Elimination Round 3",0.8596437758709911
+1077,2018-11-16T14:35:00,"Codeforces Round 521 (Div. 3)",0.4079341767454766
 1062,2018-11-14T15:35:00,"Codeforces Round 520 (Div. 2)",1.4278308245187417
 1076,2018-11-12T14:35:00,"Educational Codeforces Round 54 (Rated for Div. 2)",1.1711163766438786
 1055,2018-11-10T14:35:00,"Mail.Ru Cup 2018 Round 2",0.8154396081797893
@@ -1092,6 +1117,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1072,2018-10-21T08:10:00,"Codeforces Round 517 (Div. 2, based on Technocup 2019 Elimination Round 2)",1.4130144408026442
 1031,2018-10-21T08:10:00,"Technocup 2019 - Elimination Round 2",1.074632779737439
 1070,2018-10-20T08:05:00,"2018-2019 ICPC, NEERC, Southern Subregional Contest (Online Mirror, ACM-ICPC Rules, Teams Preferred)",2.1532865892033146
+1054,2018-10-18T16:35:00,"Mail.Ru Cup 2018 Round 1",0.6699658241845374
 1063,2018-10-14T10:05:00,"Codeforces Round 516 (Div. 1, by Moscow Team Olympiad)",0.8666316623526532
 1064,2018-10-14T10:05:00,"Codeforces Round 516 (Div. 2, by Moscow Team Olympiad)",2.017207416861463
 1066,2018-10-12T14:35:00,"Codeforces Round 515 (Div. 3)",1.4713226505492842
@@ -1107,6 +1133,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 1046,2018-09-22T10:35:00,"Bubble Cup 11 - Finals [Online Mirror, Div. 2]",3.8313631119118976
 1034,2018-09-21T14:35:00,"Codeforces Round 511 (Div. 1)",1.4079375325413392
 1047,2018-09-21T14:35:00,"Codeforces Round 511 (Div. 2)",1.8761233498916554
+1052,2018-09-20T17:00:00,"Huawei Honorcup Marathon 1",NaN
 1051,2018-09-20T14:45:00,"Educational Codeforces Round 51 (Rated for Div. 2)",1.8688247226233026
 1042,2018-09-17T08:05:00,"Codeforces Round 510 (Div. 2)",0.7003501148443907
 1041,2018-09-16T10:35:00,"Codeforces Round 509 (Div. 2)",0.8464142199945007
@@ -1179,6 +1206,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 961,2018-04-04T14:05:00,"Educational Codeforces Round 41 (Rated for Div. 2)",1.512847084217842
 959,2018-04-03T16:05:00,"Codeforces Round 473 (Div. 2)",1.4881978604890975
 952,2018-04-01T15:35:00,"April Fools Contest 2018",1.2109565569367662
+957,2018-03-24T15:35:00,"Codeforces Round 472 (rated, Div. 2, based on VK Cup 2018 Round 2)",1.4856914520066118
 924,2018-03-24T15:35:00,"VK Cup 2018 - Round 2",1.0323167708997412
 955,2018-03-23T16:35:00,"Codeforces Round 471 (Div. 2)",1.690360787007617
 954,2018-03-22T06:05:00,"Educational Codeforces Round 40 (Rated for Div. 2)",0.8227146006168818
@@ -1222,6 +1250,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 906,2017-12-23T14:05:00,"Codeforces Round 454 (Div. 1, based on Technocup 2018 Elimination Round 4)",0.7663602256797502
 907,2017-12-23T14:05:00,"Codeforces Round 454 (Div. 2, based on Technocup 2018 Elimination Round 4)",1.4886730198485145
 910,2017-12-22T11:05:00,"Testing Round 14 (Unrated)",0.5125792019362931
+901,2017-12-19T15:35:00,"Codeforces Round 453 (Div. 1)",1.141597643526312
 902,2017-12-19T15:35:00,"Codeforces Round 453 (Div. 2)",1.1102525853474194
 899,2017-12-17T06:35:00,"Codeforces Round 452 (Div. 2)",0.6401549418161626
 898,2017-12-16T11:35:00,"Codeforces Round 451 (Div. 2)",1.5812352952485926
@@ -1238,6 +1267,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 889,2017-11-12T16:05:00,"Codeforces Round 445 (Div. 1, based on Technocup 2018 Elimination Round 3)",0.5607350454761288
 890,2017-11-12T16:05:00,"Codeforces Round 445 (Div. 2, based on Technocup 2018 Elimination Round 3)",1.1458206436868574
 888,2017-11-09T15:05:00,"Educational Codeforces Round 32",1.0146152866533225
+887,2017-11-03T16:05:00,"Codeforces Round 444 (Div. 2)",1.635823646360898
 884,2017-10-27T14:05:00,"Educational Codeforces Round 31",0.8543301554874237
 878,2017-10-26T14:45:00,"Codeforces Round 443 (Div. 1)",0.43075006674135335
 879,2017-10-26T14:45:00,"Codeforces Round 443 (Div. 2)",1.4374409787943225
@@ -1249,6 +1279,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 872,2017-10-15T08:05:00,"Codeforces Round 440 (Div. 2, based on Technocup 2018 Elimination Round 2)",1.203897404169206
 870,2017-10-15T08:05:00,"Technocup 2018 - Elimination Round 2",1.3810637971227453
 873,2017-10-12T14:05:00,"Educational Codeforces Round 30",0.8560706212859407
+869,2017-10-06T13:35:00,"Codeforces Round 439 (Div. 2)",3.1835302287342646
 868,2017-10-05T07:05:00,"Codeforces Round 438 by Sberbank and Barcelona Bootcamp (Div. 1 + Div. 2 combined)",1.5329766824900317
 867,2017-09-30T17:05:00,"Codeforces Round 437 (Div. 2, based on MemSQL Start[c]UP 3.0 - Round 2)",2.0615869413388705
 865,2017-09-30T17:05:00,"MemSQL Start[c]UP 3.0 - Round 2 (onsite finalists)",0.825125686446379
@@ -1262,6 +1293,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 860,2017-09-17T13:05:00,"Codeforces Round 434 (Div. 1, based on Technocup 2018 Elimination Round 1)",0.7729277275914708
 861,2017-09-17T13:05:00,"Codeforces Round 434 (Div. 2, based on Technocup 2018 Elimination Round 1)",1.4158500030336738
 859,2017-09-16T17:35:00,"MemSQL Start[c]UP 3.0 - Round 1",0.9133955602328759
+856,2017-09-10T13:35:00,"Russian Code Cup 2017 - Finals [Unofficial Mirror, Div. 1 Only Recommended, Teams Allowed]",0.9313193763559461
 853,2017-09-06T12:55:00,"Codeforces Round 433 (Div. 1, based on Olympiad of Metropolises)",1.637757248235745
 854,2017-09-06T12:55:00,"Codeforces Round 433 (Div. 2, based on Olympiad of Metropolises)",0.8414620461030418
 846,2017-09-05T15:05:00,"Educational Codeforces Round 28",0.9461965057420025
@@ -1289,6 +1321,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 827,2017-07-11T16:45:00,"Codeforces Round 423 (Div. 1, rated, based on VK Cup Finals)",1.1516930966057093
 828,2017-07-11T16:45:00,"Codeforces Round 423 (Div. 2, rated, based on VK Cup Finals)",1.197017331427607
 823,2017-07-09T08:05:00,"VK Cup 2017 - Finals",0.4390802338614384
+822,2017-07-02T16:05:00,"Codeforces Round 422 (Div. 2)",1.6173065827707507
 818,2017-06-29T15:05:00,"Educational Codeforces Round 24",0.8546885182777331
 819,2017-06-27T14:35:00,"Codeforces Round 421 (Div. 1)",2.427299984685449
 820,2017-06-27T14:35:00,"Codeforces Round 421 (Div. 2)",3.840406309477356
@@ -1376,12 +1409,14 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 737,2016-11-20T09:05:00,"Codeforces Round 380 (Div. 1, Rated, Based on Technocup 2017 - Elimination Round 2)",1.6094536469077667
 738,2016-11-20T09:05:00,"Codeforces Round 380 (Div. 2, Rated, Based on Technocup 2017 - Elimination Round 2)",1.684710321711503
 729,2016-11-20T09:05:00,"Technocup 2017 - Elimination Round 2",0.8929730035050031
+734,2016-11-15T16:35:00,"Codeforces Round 379 (Div. 2)",1.2341053784633325
 733,2016-10-31T14:05:00,"Codeforces Round 378 (Div. 2)",1.8016759149048107
 730,2016-10-23T08:00:00,"2016-2017 ACM-ICPC, NEERC, Southern Subregional Contest (Online Mirror, ACM-ICPC Rules, Teams Preferred)",2.6630020191887347
 725,2016-10-22T15:05:00,"Canada Cup 2016",1.1608287123604577
 732,2016-10-17T14:35:00,"Codeforces Round 377 (Div. 2)",0.6055360211422738
 731,2016-10-16T09:45:00,"Codeforces Round 376 (Div. 2)",1.4258626250052988
 727,2016-10-15T09:05:00,"Technocup 2017 - Elimination Round 1 (Unofficially Open for Everyone, Rated for Div. 2)",0.9860345768141058
+724,2016-10-08T12:15:00,"Intel Code Challenge Final Round (Div. 1 + Div. 2, Combined)",1.480972035379962
 723,2016-10-03T11:35:00,"Codeforces Round 375 (Div. 2)",1.3237568232073171
 722,2016-10-01T14:05:00,"Intel Code Challenge Elimination Round (Div. 1 + Div. 2, combined)",1.8899462546687347
 721,2016-09-30T14:05:00,"Codeforces Round 374 (Div. 2)",1.4464387515768051
@@ -1414,6 +1449,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 690,2016-07-10T08:00:00,"Helvetic Coding Contest 2016 online mirror (teams, unrated)",1.946780769602437
 689,2016-07-06T16:35:00,"Codeforces Round 361 (Div. 2)",0.6182689316315502
 695,2016-07-03T08:20:00,"VK Cup 2016 - Finals",0.46437198883357433
+687,2016-06-29T17:05:00,"Codeforces Round 360 (Div. 1)",0.7226504862949326
 688,2016-06-29T17:05:00,"Codeforces Round 360 (Div. 2)",0.7331615343893639
 685,2016-06-23T16:35:00,"Codeforces Round 359 (Div. 1)",1.4223165384086822
 686,2016-06-23T16:35:00,"Codeforces Round 359 (Div. 2)",1.6453681485442768
@@ -1684,6 +1720,7 @@ ID,Starting time (UTC),Contest title,Contest imbalance
 402,2014-03-16T15:30:00,"Codeforces Round 236 (Div. 2)",1.053884662166315
 401,2014-03-10T15:30:00,"Codeforces Round 235 (Div. 2)",1.345017447469167
 400,2014-03-05T15:30:00,"Codeforces Round 234 (Div. 2)",0.774402823534004
+388,2014-02-03T15:40:00,"Codeforces Round 228 (Div. 1)",1.2055845583779645
 389,2014-02-03T15:40:00,"Codeforces Round 228 (Div. 2)",1.7488587157995314
 387,2014-01-30T15:30:00,"Codeforces Round 227 (Div. 2)",1.6703457034077944
 385,2014-01-24T15:35:00,"Codeforces Round 226 (Div. 2)",1.0472856906398034
